@@ -25,6 +25,17 @@
         <a href="gmcchhapp://?functionCode=GMCCAPP_002_011&relateId=KJ5G3" class="btn">办理0元5G流量包（3天有效期）</a>
       
         <a href="gmcchhapp://?functionCode=GMCCAPP_002_011&relateId=YX1T10G" class="btn">办理0元10G流量包（1天有效期）</a>
+        <div class="btn" style="
+    padding: 0px;
+"><input type="text" placeholder="输入业务代码" style="
+    margin: 0px;
+    padding: 0px;
+    height: 47px;
+    color: black;
+" id="code"><a onclick="openByCode()" style="
+    color: white;
+    padding: 10px;
+">启动页面</a></div>
     </section>
 
     <section class="main-content">
@@ -44,6 +55,13 @@
     </section>
 
     
-  
+  <script>
+      function openByCode(){
+          var code = document.getElementById("code").value;
+          if(code){
+            window.open("gmcchhapp://?functionCode=GMCCAPP_002_011&relateId="+code);
+          }
+      }
+      </script>
 
 </body></html>
